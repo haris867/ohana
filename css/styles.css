@@ -1,0 +1,192 @@
+body {
+  font-family: "Helvetica Neue";
+  margin: 0;
+}
+
+.letter-container {
+  color: white;
+  margin-left: 10px;
+  padding-top: 10px;
+}
+
+header {
+  background-color: black;
+  /* background-image: linear-gradient(
+    black,
+    #4d4e4e
+  ); could use darker grey to show where header ends */
+  font-weight: 100;
+}
+
+.letter-container {
+  display: flex;
+}
+
+.o {
+  font-size: 8em;
+  margin-top: -16px;
+}
+
+.h {
+  font-size: 6.36em;
+  animation-name: h-move;
+  animation-duration: 3s;
+  position: relative;
+  right: 0px;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+}
+
+.a1 {
+  font-size: 6.25em;
+  animation-name: a1-dissapear;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  position: relative;
+  animation-delay: 3s;
+}
+
+.a2 {
+  font-size: 6.25em;
+  animation-name: a2-dissapear;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  position: relative;
+  animation-delay: 3s;
+}
+
+.n {
+  font-size: 6.3em;
+  animation-name: n-move;
+  animation-duration: 3s;
+  position: relative;
+  right: 0px;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+}
+
+.menu-icon {
+  font-size: 2em;
+  position: relative;
+  opacity: 0;
+  top: 45px;
+  right: 10px;
+  animation-name: menu-appear;
+  animation-delay: 3s;
+  animation-duration: 6s;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+
+@keyframes h-move {
+  0% {
+    right: 0px;
+  }
+
+  95% {
+    right: 80px;
+  }
+
+  100% {
+    right: 79px;
+  }
+}
+
+@keyframes n-move {
+  0% {
+    right: 0px;
+  }
+
+  100% {
+    right: 202px;
+  }
+}
+
+@keyframes a1-dissapear {
+  0% {
+    opacity: 100%;
+    right: 0px;
+    transform: rotate(0deg);
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  70% {
+    transform: rotate(-20deg);
+  }
+
+  100% {
+    right: 120px;
+    opacity: 0;
+  }
+}
+
+@keyframes a2-dissapear {
+  0% {
+    opacity: 100%;
+    right: 0px;
+    transform: rotate(0deg);
+  }
+
+  7% {
+  }
+
+  20% {
+    font-size: 6em;
+    top: -1.6px;
+  }
+
+  40% {
+    top: -5px;
+  }
+
+  50% {
+    top: -10px;
+    opacity: 0;
+  }
+
+  70% {
+    transform: rotate(180deg);
+    top: -10px;
+    right: 215px;
+  }
+
+  75% {
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes menu-appear {
+  0% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+/* .main {
+  height: 699px;
+  background-image: linear-gradient(#4d4e4e, black);
+}
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.box {
+  border: solid 0.1px #8f8e8e;
+  margin: 30px;
+  padding: 100px;
+  width: 350px;
+  background-color: black;
+  background-image: linear-gradient(black, #272626);
+} */
